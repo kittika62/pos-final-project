@@ -10,7 +10,7 @@ export default function POSPage() {
 
       {orders.map((order) => (
         <div key={order.id} className="border p-3 mb-3 rounded">
-          <div>โต๊ะ {order.table}</div>
+          <div>โต๊ะ :{order.table}</div>
           <div>รายการ : {order.items.join(", ")}</div>
           <div className="font-bold">สถานะ: {order.status}</div>
         </div>
